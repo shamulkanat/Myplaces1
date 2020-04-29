@@ -15,5 +15,14 @@ struct Place {
     var type: String
     var image: String
     
+    static let placesNames = ["Балкан Гриль", "Бочка", "Вкусные истории", "Дастархан", "Индокитай", "Классик", "Шок", "Bonsai", "Burger Heroes", "Kitchen", "Love&Life", "Morris Pub", "Sherlock Holmes", "Speak Easy", "X.O"]
     
+    static func getPlaces() -> [Place] {
+        var places = [Place]()
+        for place in placesNames {
+            places.append(Place(name: place, location: "Minsk", type: "Restrant", image: place))
+    
+        }
+    return places
+    }
 }

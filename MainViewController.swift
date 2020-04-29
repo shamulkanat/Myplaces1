@@ -11,10 +11,10 @@ import UIKit
 class MainViewController: UITableViewController {
 
     
-   // let placesNames = ["Балкан Гриль", "Бочка", "Вкусные истории", "Дастархан", "Индокитай", "Классик", "Шок", "Bonsai", "Burger Heroes", "Kitchen", "Love&Life", "Morris Pub", "Sherlock Holmes", "Speak Easy", "X.O"]
+  
     
     
-    let places = [Place(name: "Балкан Гриль", location: "Minsk", type: "Restrant", image: "Балкан Гриль")]
+    let places = Place.getPlaces()
 
     override func viewDidLoad() {
         super.viewDidLoad()
