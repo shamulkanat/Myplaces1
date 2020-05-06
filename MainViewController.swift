@@ -18,6 +18,8 @@ class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Test branch")
     }
 
         
